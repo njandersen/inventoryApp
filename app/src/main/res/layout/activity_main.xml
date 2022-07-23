@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/currentinventorycard"
+        android:layout_width="270dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227">
+
+        <TextView
+            android:id="@+id/currentInventoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Inventory"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/robotocondensed_bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addInventoryCard"
+        android:layout_width="270dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentinventorycard"
+        app:layout_constraintVertical_bias="0.113" >
+
+        <TextView
+            android:id="@+id/AddInventoryText"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:text="Add Inventory"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/robotocondensed_bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pastorderscard"
+        android:layout_width="270dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addInventoryCard"
+        app:layout_constraintVertical_bias="0.125" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pastOrdersText"
+            android:text="Past Orders"
+            android:textColor="@color/teal_700"
+            android:fontFamily="@font/robotocondensed_bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
