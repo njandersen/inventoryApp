@@ -34,17 +34,7 @@ public abstract class AppDatabase extends RoomDatabase {
                         InventoryDAO inventoryDAO = Instance.inventoryDAO();
                         inventoryDAO.deleteAll();
 
-                        Inventory inventory = new Inventory("Ryzen 7 5700x", "32",
-                                "AMD 3rd Gen CPU", "$274.99");
-                        inventoryDAO.insertInventory(inventory);
 
-                        inventory = new Inventory( "Ryzen 9 5900x", "15",
-                                "AMD 3rd Gen CPU", "$349.99");
-                        inventoryDAO.insertInventory(inventory);
-
-                        inventory = new Inventory("Gigabyte 3080", "24",
-                                "Nvidia 30 series graphics card", "$920.99" );
-                        inventoryDAO.insertInventory(inventory);
                     });
                 }
 

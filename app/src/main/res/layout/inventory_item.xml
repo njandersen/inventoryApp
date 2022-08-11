@@ -9,28 +9,29 @@
     app:cardCornerRadius="5dp"
     android:layout_margin="10dp">
 
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="174dp"
+        android:layout_height="75dp">
 
         <TextView
+            android:id="@+id/item"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Item Name"
-            android:id="@+id/item"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/robotocondensed_regular"
             android:layout_marginStart="5dp"
-            />
+            android:fontFamily="@font/open_sans"
+            android:text="Item Name" />
 
         <TextView
+            android:id="@+id/qty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/qty"
-            android:layout_below="@+id/item"
             android:layout_centerHorizontal="true"
-            android:fontFamily="@font/robotocondensed_light"
-            android:layout_marginTop="10dp"/>
+            android:text="22"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/open_sans" />
 
     </RelativeLayout>
 

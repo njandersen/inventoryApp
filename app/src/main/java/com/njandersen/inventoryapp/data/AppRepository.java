@@ -21,12 +21,17 @@ public class AppRepository {
 
     public LiveData<List<Inventory>> getAllData() { return allItems; }
 
+    public LiveData<Inventory> get(int id) {
+        return inventoryDAO.get(id);
+    }
+
     //Insert Method
     public void insert(Inventory inventory) {
         AppDatabase.databaseWriteExecutor.execute(() -> {
             inventoryDAO.insertInventory(inventory);
         });
     }
+
 
     //Update Method
     public void update(Inventory inventory) {

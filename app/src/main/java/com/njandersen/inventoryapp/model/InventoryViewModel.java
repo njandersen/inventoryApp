@@ -22,10 +22,11 @@ public class InventoryViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Inventory>> getAllInventory() {return allItems; }
+    public LiveData<Inventory> get(int id) { return repository.get(id);}
 
     public static void insert(Inventory inventory) {repository.insert(inventory);}
 
-    public void update(Inventory inventory) {repository.update(inventory);}
+    public static void update(Inventory inventory) {repository.update(inventory);}
 
-    public void delete(Inventory inventory) {repository.delete(inventory);}
+    public static void delete(Inventory inventory) {repository.delete(inventory);}
 }

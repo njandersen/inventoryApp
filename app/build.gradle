@@ -39,6 +39,8 @@ dependencies {
 }
 
 dependencies {
+
+    implementation 'com.google.firebase:firebase-database:20.0.0'
     def room_version = "2.4.2"
 
     implementation "androidx.room:room-runtime:$room_version"

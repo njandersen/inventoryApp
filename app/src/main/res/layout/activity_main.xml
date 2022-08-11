@@ -25,8 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Current Inventory"
-            android:textColor="@color/teal_700"
-            android:fontFamily="@font/robotocondensed_bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans"
             />
 
     </androidx.cardview.widget.CardView>
@@ -49,8 +49,8 @@
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:text="Add Inventory"
-            android:textColor="@color/teal_700"
-            android:fontFamily="@font/robotocondensed_bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans"
             />
     </androidx.cardview.widget.CardView>
 
@@ -72,8 +72,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/pastOrdersText"
             android:text="Past Orders"
-            android:textColor="@color/teal_700"
-            android:fontFamily="@font/robotocondensed_bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/open_sans"
             />
 
     </androidx.cardview.widget.CardView>

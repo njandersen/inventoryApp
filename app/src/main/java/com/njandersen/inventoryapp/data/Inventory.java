@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey;
 public class Inventory {
 
     @PrimaryKey(autoGenerate = true)
-    private  int sku;
+    private  int id;
 
     @ColumnInfo(name = "item_name")
     private String itemName;
@@ -40,12 +40,16 @@ public class Inventory {
         this.itemQty = itemQty;
     }
 
-    public int getSku() {
-        return sku;
+    public Inventory() {
+
     }
 
-    public void setSku(int sku) {
-        this.sku = sku;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int sku) {
+        this.id = sku;
     }
 
     public String getItemName() {

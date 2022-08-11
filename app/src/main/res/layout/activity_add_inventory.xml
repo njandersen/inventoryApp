@@ -10,41 +10,42 @@
         android:layout_height="wrap_content"
         android:id="@+id/addItem"
         android:text="Add Item"
-        android:fontFamily="@font/robotocondensed_bold"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:textSize="25dp"/>
 
     <EditText
+        android:id="@+id/addItemName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/addItemName"
         android:layout_below="@+id/addItem"
-        android:text="Item Name: "
-        android:fontFamily="@font/robotocondensed_light_italic"/>
+        android:fontFamily="@font/open_sans"
+        android:hint="Item Name: " />
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/addItemQty"
         android:layout_below="@+id/addItemName"
-        android:fontFamily="@font/robotocondensed_light_italic"
-        android:text="Item QTY: "/>
+        android:fontFamily="@font/open_sans"
+        android:hint="Item Qty: "/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/addItemDescription"
         android:layout_below="@+id/addItemQty"
-        android:text="Item Description: "
-        android:fontFamily="@font/robotocondensed_light_italic"/>
+        android:hint="Item Description: "
+        android:fontFamily="@font/open_sans"/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/addItemPrice"
         android:layout_below="@+id/addItemDescription"
-        android:fontFamily="@font/robotocondensed_light_italic"
-        android:text="Item Price: "/>
+        android:fontFamily="@font/open_sans"
+        android:hint="Item Price: "/>
 
     <Button
         android:layout_width="wrap_content"
@@ -52,7 +53,27 @@
         android:layout_below="@id/addItemPrice"
         android:layout_centerHorizontal="true"
         android:text="Save"
-        android:fontFamily="@font/robotocondensed_regular"
+        android:fontFamily="@font/open_sans"
         android:id="@+id/saveButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_marginLeft="20dp"
+        android:text="Update"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/updateBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Delete"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/deleteBtn" />
+
 
 </RelativeLayout>
