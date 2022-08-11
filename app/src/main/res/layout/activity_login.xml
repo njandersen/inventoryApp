@@ -39,6 +39,15 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:layout_below="@id/password"
+        android:fontFamily="@font/open_sans"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/forgotPassword"
         android:text="New User?"
         android:fontFamily="@font/open_sans"
@@ -49,7 +58,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/loginBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Forgot Password?"

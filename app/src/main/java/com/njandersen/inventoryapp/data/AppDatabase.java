@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 @Database(entities = {Inventory.class, User.class}, exportSchema = false, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
-    public abstract UserDAO userDAO();
+
 
     //Pushes database into background thread
     private static volatile AppDatabase Instance;
@@ -32,6 +32,7 @@ public abstract class AppDatabase extends RoomDatabase {
 
                     databaseWriteExecutor.execute(() -> {
                         InventoryDAO inventoryDAO = Instance.inventoryDAO();
+                        UserDAO userDAO = Instance.userDAO();
                         inventoryDAO.deleteAll();
 
 
@@ -56,6 +57,7 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
     public abstract InventoryDAO inventoryDAO();
+    public abstract UserDAO userDAO();
 
 
 }
