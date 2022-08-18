@@ -20,4 +20,12 @@
         android:clickable="true"
         app:srcCompat="@drawable/ic_baseline_add_24" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSMS"
+        android:layout_alignParentBottom="true"
+        android:text="SMS"
+        android:fontFamily="@font/open_sans"/>
+
 </RelativeLayout>

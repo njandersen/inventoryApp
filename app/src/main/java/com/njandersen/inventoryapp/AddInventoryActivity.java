@@ -65,6 +65,7 @@ public class AddInventoryActivity extends AppCompatActivity {
             isEdit = true;
         }
 
+        //Saves the information entered in the edit text fields to the database.
         saveButton.setOnClickListener(view -> {
             Intent replyIntent = new Intent();
             //Makes sure all the text fields are not empty.

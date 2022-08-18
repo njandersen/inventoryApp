@@ -19,6 +19,7 @@ public interface InventoryDAO {
     @Query("SELECT * FROM Inventory WHERE Inventory.id == :id")
     LiveData<Inventory> get(int id);
 
+
     //crud operations
     @Insert
     void insertInventory(Inventory item);

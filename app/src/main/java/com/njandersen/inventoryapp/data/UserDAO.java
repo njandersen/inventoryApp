@@ -15,8 +15,8 @@ public interface UserDAO {
     @Query("SELECT * FROM User ORDER BY last_name ASC")
     LiveData<List<User>> getAllUsers();
 
-    @Query("SELECT * FROM User WHERE User.id == :id")
-    LiveData<User> getUser(int id);
+    @Query("SELECT * FROM User WHERE User.user_name == :userName AND User.password == :password")
+    LiveData<User> getUser(String userName, String password);
 
     @Insert
     void insertUser(User user);

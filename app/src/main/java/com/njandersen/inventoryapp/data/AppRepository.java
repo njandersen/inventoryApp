@@ -27,7 +27,10 @@ public class AppRepository {
     public LiveData<Inventory> get(int id) {
         return inventoryDAO.get(id);
     }
-    public LiveData<User> getUser(int id) {return userDAO.getUser(id); }
+    public LiveData<User> getUser(String userName, String password) {
+        return userDAO.getUser(userName, password); }
+
+
 
     //Insert Method
     public void insert(Inventory inventory) {

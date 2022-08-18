@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Inventory App</string>
+
+    <!--SMS Alert Notification-->
+    <string name="alert_sms_title">App SMS Permission Needed</string>
+    <string name="alert_sms_msg">The app SMS feature requires permission to notify of upcoming events.</string>
+    <string name="alert_sms_enable_button">Enable</string>
+    <string name="alert_sms_disable_button">Disable</string>
+
+    <!--Delete All Alerts Notification-->
+    <string name="alert_delete_dialog_yes_button">Yes</string>
+    <string name="alert_delete_dialog_no_button">No</string>
+    <string name="alert_delete_title">Delete All Events</string>
+    <string name="alert_delete_msg">Are you sure you wish to delete all events in database?</string>
 </resources>

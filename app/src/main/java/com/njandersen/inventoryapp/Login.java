@@ -7,9 +7,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import com.njandersen.inventoryapp.data.User;
 import com.njandersen.inventoryapp.model.UserViewModel;
 
 public class Login extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class Login extends AppCompatActivity {
     private Button login;
     private Button forgotPassword;
     private Button newUser;
+    private int userId = 0;
 
     private UserViewModel userViewModel;
 
@@ -38,11 +41,13 @@ public class Login extends AppCompatActivity {
 
 
         login.setOnClickListener(view -> {
-            if (username.getText().toString().equals("admin") &&
-            password.getText().toString().equals("password")) {
+            String userNameText = username.getText().toString();
+            String userPassword = password.getText().toString();
+            LiveData<User> user = userViewModel.getUser(userNameText, userPassword);
+            if (user != null) {
                 Toast.makeText(getApplicationContext(),
                         "Redirecting...", Toast.LENGTH_SHORT).show();
-                Intent newIntent = new Intent(Login.this, MainActivity.class);
+                Intent newIntent = new Intent(Login.this, InventoryActivity.class);
                 Login.this.startActivity(newIntent);
             }
             else {
@@ -56,4 +61,6 @@ public class Login extends AppCompatActivity {
             Login.this.startActivity(newIntent);
         });
     }
+
+
 }
